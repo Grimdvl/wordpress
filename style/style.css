@@ -6,7 +6,7 @@
 
 .container {
     position: relative;
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -128,7 +128,7 @@ h2.title {
     font-family: 'Roboto';
     font-size: 30px;
     font-weight: 400;
-    line-height: 12px;
+    line-height: 30px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -156,8 +156,10 @@ h2.title {
 
 .waiting .waiting_wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 45px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .waiting .waiting_wrapper .waiting_item {
@@ -189,7 +191,7 @@ h2.title {
     font-family: 'Roboto';
     font-size: 29px;
     font-weight: 900;
-    line-height: 12px;
+    line-height: 30px;
     text-transform: uppercase;
 }
 
@@ -213,6 +215,8 @@ h2.title {
     top: -54px;
     left: -240px;
     z-index: -1;
+    width: 100%;
+    object-fit: scale-down;
 }
 
 .finish {
@@ -224,7 +228,9 @@ h2.title {
 .finish .finish_wrapper {
     margin-top: 41px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .finish .finish_wrapper .finish_item {
@@ -269,8 +275,8 @@ h2.title {
 }
 
 .present .present_wrapper .present_item .present_descr {
-    width: 1131px;
-    height: 115px;
+    max-width: 1131px;
+    min-height: 115px;
     margin-top: 42px;
     text-align: center;
     color: #252525;
@@ -295,7 +301,7 @@ h2.title {
 
 
 h2.timer_web {
-    width: 577px;
+    max-width: 577px;
     height: 27px;
     color: #252525;
     font-family: 'Roboto';
@@ -303,14 +309,14 @@ h2.timer_web {
     font-weight: 400;
     font-style: normal;
     letter-spacing: normal;
-    line-height: 12px;
+    line-height: 25px;
     margin-top: 77px;
     text-align: center;
     text-transform: uppercase;
 }
 
 h2.timer_descr {
-    width: 577px;
+    max-width: 577px;
     height: 23px;
     color: #4a4a4a;
     font-family: 'Roboto';
@@ -324,7 +330,7 @@ h2.timer_descr {
 }
 
 h2.timer_clock {
-    width: 577px;
+    max-width: 577px;
     height: 26px;
     color: #299cbd;
     font-family: 'Roboto';
@@ -332,7 +338,7 @@ h2.timer_clock {
     font-weight: 900;
     font-style: normal;
     letter-spacing: normal;
-    line-height: 12px;
+    line-height: 25px;
     margin-top: 25px;
     text-align: center;
 }
@@ -361,7 +367,7 @@ footer {
 
 .info {
     margin: 0 auto;
-    width: 377px;
+    max-width: 377px;
     text-align: center;
     color: #888888;
     font-family: 'Roboto';
